@@ -3,6 +3,7 @@ package com.example.troy.flashapp;
 import android.graphics.Color;
 import android.media.MediaPlayer;
 import android.os.Handler;
+import android.speech.RecognitionListener;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.ViewGroup;
@@ -11,7 +12,7 @@ import android.widget.Button;
 import java.util.Calendar;
 import java.util.Date;
 
-public class MainActivity extends AppCompatActivity {
+public class MainActivity extends AppCompatActivity implements RecognitionListener {
 
     Boolean turnOn = true;
 
@@ -57,4 +58,48 @@ public class MainActivity extends AppCompatActivity {
         }
     };
 
+    @Override
+    public void onReadyForSpeech(Bundle params) {
+        
+    }
+
+    @Override
+    public void onBeginningOfSpeech() {
+
+    }
+
+    @Override
+    public void onRmsChanged(float rmsdB) {
+
+    }
+
+    @Override
+    public void onBufferReceived(byte[] buffer) {
+
+    }
+
+    @Override
+    public void onEndOfSpeech() {
+
+    }
+
+    @Override
+    public void onError(int error) {
+
+    }
+
+    @Override
+    public void onResults(Bundle results) {
+
+    }
+
+    @Override
+    public void onPartialResults(Bundle partialResults) {
+
+    }
+
+    @Override
+    public void onEvent(int eventType, Bundle params) {
+
+    }
 }

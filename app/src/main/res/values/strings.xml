@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">flashApp</string>
+    <string name="title_activity_listen_for_command">ListenForCommand</string>
 </resources>
